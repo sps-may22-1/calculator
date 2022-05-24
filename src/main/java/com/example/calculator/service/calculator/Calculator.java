@@ -1,4 +1,4 @@
-package com.example.calculator.service;
+package com.example.calculator.service.calculator;
 
 public interface Calculator {
 
