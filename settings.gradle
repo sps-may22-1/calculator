@@ -1,1 +1,4 @@
 rootProject.name = 'calculator'
+
+include 'operation'
+include 'calculation'
