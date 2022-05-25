@@ -14,7 +14,7 @@ public abstract class AbstractOperationService {
                 .build();
 
     public double calculate(double x, double y) {
-        String url = "http://localhost:8081/%s-operations".formatted(getOperationCode());
+        String url = "http://localhost:%d/operations".formatted(getOperationPort());
 
         String requestJson = """
                 {
@@ -27,6 +27,6 @@ public abstract class AbstractOperationService {
         return responseJson.get("result").asDouble();
     }
 
-    protected abstract String getOperationCode();
+    protected abstract int getOperationPort();
 }
 

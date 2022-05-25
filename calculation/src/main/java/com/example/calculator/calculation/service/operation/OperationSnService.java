@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class OperationSnService extends AbstractOperationService {
 
     @Override
-    protected String getOperationCode() {
-        return "sn";
+    protected int getOperationPort() {
+        return 8082;
     }
 }
