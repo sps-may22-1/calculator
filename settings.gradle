@@ -1,5 +1,6 @@
 rootProject.name = 'calculator'
 
 include 'config-server'
+include 'eureka-server'
 include 'operation'
 include 'calculation'
